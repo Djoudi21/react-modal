@@ -1,0 +1,25 @@
+.simple-form-group {
+  margin-bottom: 1rem;
+}
+.simple-text-label {
+  display: block;
+  color: red;
+}
+.simple-text-input {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(33, 37, 41);
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  cursor: not-allowed;
+  border: 2px solid red;
+}
