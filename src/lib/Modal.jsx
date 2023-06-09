@@ -8,9 +8,15 @@ export default function Modal({ content = "text", display = false, closeModal })
     }
     return (
         <div>
-            {display && <div className="modal-backdrop" onClick={close}/>}
-            <IconClosing/>
-            {content}
+            {display && (
+                <>
+                    <div className="modal-backdrop" onClick={close}/>
+                    <div>
+                        <IconClosing/>
+                        <span>{content}</span>
+                    </div>
+                </>
+            )}
         </div>
     )
 }
