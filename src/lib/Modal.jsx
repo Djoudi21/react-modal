@@ -2,7 +2,7 @@ import React from "react";
 import "./Modal.css";
 import {IconClosing} from "./IconClosing";
 
-export default function Modal({ content = "text", display = true, closeModal }) {
+export default function Modal({ content = "text", display = false, closeModal }) {
     function close() {
         closeModal(false)
     }
