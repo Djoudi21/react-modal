@@ -1,10 +1,10 @@
 "use strict";
 
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault")["default"];
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault").default;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = Modal;
+exports.default = Modal;
 var _react = _interopRequireDefault(require("react"));
 require("./Modal.css");
 var _IconClosing = require("./IconClosing");
@@ -17,8 +17,8 @@ function Modal(_ref) {
   function close() {
     closeModal(false);
   }
-  return /*#__PURE__*/_react["default"].createElement("div", null, display && /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", null, display && /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "modal-backdrop",
     onClick: close
-  }), /*#__PURE__*/_react["default"].createElement(_IconClosing.IconClosing, null), content);
+  }), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_IconClosing.IconClosing, null), /*#__PURE__*/_react.default.createElement("span", null, content))));
 }
