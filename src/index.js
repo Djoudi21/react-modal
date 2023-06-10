@@ -3,20 +3,19 @@ import { render } from "react-dom";
 import { Modal } from "./lib";
 
 const App = () => {
-    const [toto, setToto] = useState(false)
+    const [display, setDisplay] = useState(false)
     function close() {
-        console.log('CLOSE')
-        setToto(!toto)
+        setDisplay(false)
     }
 
-    function display() {
-        setToto(!toto)
+    function handleDisplay() {
+        setDisplay(true)
     }
     return (
         <div style={{ width: 640, margin: "15px auto" }}>
             <h1>Hello React</h1>
-            <button onClick={display}>display</button>
-            <Modal display={toto} closeModal={close} content={'content'} />
+            <button onClick={handleDisplay}>display</button>
+            <Modal display={display} closeModal={close} content={'content'} />
         </div>
     )
 };
