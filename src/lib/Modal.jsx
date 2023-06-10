@@ -32,7 +32,7 @@ export default function Modal({ display = false, closeModal }) {
                             <path stroke="#fff" d="M17 24L22 29L32 19"/>
                         </g>
                     </svg>
-                    <p className="modal-card-text">Félicitations! </p>
+                    <p className="modal-card-text">Félicitations!</p>
                 </div>
             </div>
         </>
