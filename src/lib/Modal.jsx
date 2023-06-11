@@ -2,7 +2,20 @@ import React, {useEffect} from "react";
 import "./Modal.css";
 import {IconClosing} from "./IconClosing";
 
+
+/**
+ * Modal component that displays a congratulatory message.
+ * @component
+ * @param {Object} props - The component props.
+ * @param {boolean} props.display - Flag indicating whether the modal should be displayed or hidden.
+ * @param {Function} props.closeModal - Callback function to close the modal.
+ * @returns {JSX.Element|null} The modal component.
+ */
 export default function Modal({ display = false, closeModal }) {
+
+    /**
+     * Closes the modal.
+     */
     function close() {
         closeModal(false)
     }
